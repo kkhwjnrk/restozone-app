@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+  font-family: $ff-poppins;
+}
+
+body {
+  font-size: $fs-16;
+  color: $text-color;
+  background-color: $white-color;
+  line-height: 1.7;
+}
+
+li {
+  list-style: none;
+}
+
+a, 
+button {
+  display: inline-block;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+  height: 7rem;
+}

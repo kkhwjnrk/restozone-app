@@ -1,0 +1,108 @@
+.app-bar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10px;
+  transition: all .3s;
+  z-index: 50;
+}
+
+.nav {
+  max-width: 1024px;
+  height: $header-height;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: $fs-24;
+  font-weight: $fw-600;
+  color: $white-color;
+
+  span {
+    display: inline-block;
+    font-size: 2.8rem;
+    color: $secondary-color;
+  }
+}
+
+.menu-toggle {
+  font-size: 3rem;
+  font-size: $fw-500;
+  color: $white-color;
+}
+
+.menu-item-container {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: $white-color;
+  padding: $spacing-16 0;
+  border-radius: 0 0 2.5rem 2.5rem;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, .1);
+  visibility: hidden;
+  transition: all .5s;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-link {
+  display: grid;
+  place-content: center;
+  font-weight: $fw-500;
+  color: $white-color;
+  transition: all .3s;
+
+  &:is(:hover, :focus) {
+    color: $secondary-color;
+  }
+}
+
+.open-menu {
+  top: $header-height;
+  visibility: visible;
+
+  .menu-link {
+    color: $title-color;
+
+    &:is(:hover, :focus) {
+      color: $secondary-color;
+    }
+  }
+
+  .active-link {
+    color: $secondary-color;
+  }
+}
+
+.change-header {
+  background-color: $white-color;
+  box-shadow: 0px 2px 8px 0px rgba(99, 99, 99, 0.2);
+
+  .logo,
+  .menu-toggle,
+  .menu-link {
+    color: $text-color
+  }
+
+  .menu-link:is(:hover, :focus) {
+    color: $secondary-color;
+  }
+
+  .active-link {
+    color: $secondary-color;
+  }
+}
+
+.active-link {
+  color: $secondary-color;
+}

@@ -1,0 +1,67 @@
+.catalog-list {
+  display: grid;
+  gap: 3rem;
+}
+
+.catalog-card {
+  background-color: $white-color;
+  box-shadow: 0 2px 4px rgba(3, 74, 40, .15);
+  border-radius: 1.5rem;
+  overflow: hidden;
+
+  &:hover .catalog-img {
+    transform: scale(1.1);
+  }
+}
+
+.catalog-banner {
+  position: relative;
+  aspect-ratio: 1 / 0.65;
+  overflow: hidden;
+}
+
+.catalog-img {
+  height: 100%;
+  transition: all 1s;
+}
+
+.catalog-rating {
+  position: absolute;
+  display: inline-block;
+  top: 1.5rem;
+  left: 0;
+  color: $white-color;
+  background-color: $primary-color;
+  border-radius: 0 1rem 1rem 0;
+  padding: $spacing-5 1rem;
+
+  i {
+    font-size: 1.5rem;
+    color: $secondary-color;
+  }
+}
+
+.catalog-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: $spacing-16;
+}
+
+.catalog-name {
+  display: flex;
+  align-items: center;
+  font-size: $fs-20;
+  font-weight: $fw-600;
+  color: $title-color;
+  transition: all .3s;
+
+  &:is(:hover, :focus) {
+    color: #494949;
+  }
+}
+
+.catalog-city {
+  font-size: $fs-18;
+  font-weight: $fw-500;
+}

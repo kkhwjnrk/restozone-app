@@ -1,0 +1,184 @@
+.resto-detail {
+  margin-bottom: $spacing-40;
+}
+
+.resto-img {
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.resto-info {
+  display: flex;
+  align-items: center;
+  margin: $spacing-24 0 $spacing-5;
+}
+
+.resto-name {
+  font-size: $fs-28;
+  color: $title-color;
+  margin-right: $spacing-16;
+}
+
+.resto-rating {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: $fs-18;
+
+  i {
+    color: $secondary-color;
+    margin-right: $spacing-5;
+  }
+
+  span {
+    font-size: $fs-20;
+    font-weight: $fw-500;
+    color: $title-color;
+  }
+}
+
+.resto-address {
+  display: inline-block;
+  font-size: $fs-18;
+  font-weight: $fw-500;
+  color: $title-color;
+  margin-bottom: $spacing-16;
+}
+
+.resto-category {
+  display: flex;
+  align-items: center;
+  font-weight: $fw-500;
+  color: $title-color;
+  margin-bottom: $spacing-16;
+
+  span:not(:nth-child(1)) {
+    color: $primary-color;
+    background-color: $primary-color-alt;
+    border-radius: 2rem;
+    padding: $spacing-5 $spacing-16;
+    margin-left: $spacing-16;
+  }
+}
+
+.resto-menu {
+  display: grid;
+  gap: 2.5rem;
+  margin-top: 3rem;
+
+  p:nth-child(1) {
+    font-size: $fs-18;
+    font-weight: $fw-500;
+    color: $title-color;
+    margin-bottom: $spacing-8;
+  }
+}
+
+.foods,
+.drinks {
+  min-width: 250px;
+  max-width: 350px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 1rem;
+  padding: $spacing-20;
+  margin: 0 auto;
+}
+
+.review-container {
+  text-align: center;
+}
+
+.review-heading {
+  display: inline-block;
+  font-size: $fs-24;
+  font-weight: $fw-600;
+  color: $title-color;
+  margin-bottom: $spacing-24;
+}
+
+.review-content {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.review-form {
+  max-width: 500px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border-radius: .8rem;
+  padding: 2rem;
+  margin: 0 auto;
+  margin-bottom: $spacing-20;
+
+  span {
+    display: inline-block;
+    font-size: $fs-20;
+    font-weight: $fw-500;
+    color: $title-color;
+    margin-bottom: $spacing-20;
+  }
+}
+
+.form-group {
+  position: relative;
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 1rem 0;
+    font-size: $fs-18;
+    color: $title-color;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid $text-color;
+    background: transparent;
+    min-width: 44px;
+    min-height: 44px;
+
+    &:focus ~ label,
+    &:valid ~ label {
+      top: -3rem;
+      left: 0;
+      color: $title-color;
+      color: #919191;
+      color: $primary-color;
+      font-size: 1.5rem;
+    }
+
+    &[type=text] {
+      margin-bottom: 3rem;
+    }
+  }
+
+  label {
+    position: absolute;
+    top:0;
+    left: 0;
+    font-size: 16px;
+    padding: 10px 0;
+    pointer-events: none;
+    transition: .5s;
+  }
+}
+
+.submit-btn {
+  text-align: end;
+  margin-top: 1.5rem;
+}
+
+.review-data {
+  text-align: start;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 1rem;
+  padding: 2rem;
+
+  p:nth-child(1) {
+    font-weight: $fw-500;
+    color: $title-color;
+  }
+
+  p:nth-child(2) {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+}
