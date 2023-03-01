@@ -1,7 +1,7 @@
 import FavoriteRestaurantIdb from '../src/scripts/data/favorite-resto-idb';
 import * as TestFactories from './helpers/test-factories';
 
-describe('Liking a movie', () => {
+describe('Liking a restaurant', () => {
   const addLikeButtonContainer = () => {
     document.body.innerHTML = '<div id="like-btn-container"></div>';
   };
@@ -16,7 +16,7 @@ describe('Liking a movie', () => {
     expect(document.querySelector('[aria-label="menyukai restoran ini"]')).toBeTruthy();
   });
 
-  it('should not show the unlike button when the movie has not been liked before', async () => {
+  it('should not show the unlike button when the restaurant has not been liked before', async () => {
     await TestFactories.likeBtnPresenterWithRestaurant({ id: 1 });
 
     expect(document.querySelector('[aria-label="batal menyukai restoran ini"]')).toBeFalsy();
