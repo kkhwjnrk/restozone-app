@@ -1,5 +1,5 @@
 const itActsAsFavoriteRestoModel = (favoriteRestaurant) => {
-  it('should return the movie that has been added', async () => {
+  it('should return the restaurant that has been added', async () => {
     favoriteRestaurant.putRestaurant({ id: 1 });
     favoriteRestaurant.putRestaurant({ id: 2 });
 
@@ -14,7 +14,7 @@ const itActsAsFavoriteRestoModel = (favoriteRestaurant) => {
     expect(await favoriteRestaurant.getAllRestaurants()).toEqual([]);
   });
 
-  it('can return all of the movies that have been added', async () => {
+  it('can return all of the restaurants that have been added', async () => {
     favoriteRestaurant.putRestaurant({ id: 1 });
     favoriteRestaurant.putRestaurant({ id: 2 });
 
