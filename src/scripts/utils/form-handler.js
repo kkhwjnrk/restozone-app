@@ -35,10 +35,11 @@ const FormHandler = {
     const reviewTemplate = `
       <article class="review-data">
         <p>${review.name}</p>
-        <p>${review.date}</p>
         <p><em>"${review.review}"</em></p>
-      </article>
-    `;
+        </article>
+        `;
+    console.log(date);
+    // <p>${review.date}</p>
     this._reviewsContainer.insertAdjacentHTML('beforeend', reviewTemplate);
   },
 
