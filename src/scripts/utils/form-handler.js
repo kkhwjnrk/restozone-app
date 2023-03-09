@@ -19,7 +19,7 @@ const FormHandler = {
       id: this._restaurantId,
       name: this._nameInput.value,
       review: this._reviewInput.value,
-      date: new Date().toLocaleDateString('id-ID', { year: 'numeric', month: 'long', day: 'numeric' }),
+      reviewDate: new Date().toLocaleDateString('id-ID', { year: 'numeric', month: 'long', day: 'numeric' }),
     };
 
     try {
@@ -36,10 +36,10 @@ const FormHandler = {
     const reviewTemplate = `
       <article class="review-data">
         <p>${review.name}</p>
+        <p>${review.reviewDate}</p>
         <p><em>"${review.review}"</em></p>
         </article>
         `;
-    // <p>${review.date}</p>
     this._reviewsContainer.insertAdjacentHTML('beforeend', reviewTemplate);
   },
 
