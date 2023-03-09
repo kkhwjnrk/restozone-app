@@ -24,6 +24,7 @@ const FormHandler = {
 
     try {
       await RestaurantSource.postReview(review);
+      console.log(review.date);
       this._addReviewToContainer(review);
       this._resetForm();
     } catch (error) {
@@ -38,7 +39,6 @@ const FormHandler = {
         <p><em>"${review.review}"</em></p>
         </article>
         `;
-    console.log(date);
     // <p>${review.date}</p>
     this._reviewsContainer.insertAdjacentHTML('beforeend', reviewTemplate);
   },
