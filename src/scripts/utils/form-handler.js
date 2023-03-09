@@ -38,7 +38,7 @@ const FormHandler = {
         <p><em>"${review.review}"</em></p>
         </article>
         `;
-    console.log(date);
+    console.log(review.date);
     // <p>${review.date}</p>
     this._reviewsContainer.insertAdjacentHTML('beforeend', reviewTemplate);
   },
